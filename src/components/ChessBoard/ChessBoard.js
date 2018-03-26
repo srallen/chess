@@ -59,8 +59,15 @@ ChessBoard.propTypes = {
   isMoveValid: PropTypes.func,
   onChange: PropTypes.func,
   onClick: PropTypes.func,
-  pieces: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.number)]))),
+  pieces: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.number)]))).isRequired,
   selectedPiece: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.number, PropTypes.number)]))
+};
+
+ChessBoard.defaultProps = {
+  isMoveValid: () => {},
+  onChange: () => {},
+  onClick: () => {},
+  pieces: [['bishop', [3, 1]], ['knight', [2, 1]]]
 };
 
 export default ChessBoard;

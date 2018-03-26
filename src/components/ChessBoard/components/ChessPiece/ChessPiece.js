@@ -20,6 +20,6 @@ export default function ChessPiece({ boardCoordinates, piece }) {
 }
 
 ChessPiece.propTypes = {
-  boardCoordinates: PropTypes.arrayOf(PropTypes.number),
-  piece: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.number)]))
+  boardCoordinates: PropTypes.arrayOf(PropTypes.number).isRequired,
+  piece: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.number)])).isRequired
 };

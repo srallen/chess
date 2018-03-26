@@ -42,7 +42,8 @@ BoardSquare.defaultProps = {
   disabled: false,
   invalid: false,
   onChange: () => {},
-  onClick: () => {}
+  onClick: () => {},
+  piece: []
 }
 
 BoardSquare.propTypes = {
