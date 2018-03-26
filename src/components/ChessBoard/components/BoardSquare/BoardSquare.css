@@ -1,0 +1,38 @@
+.BoardSquare {
+  border: solid thin black;
+  cursor: pointer;
+  display: table-cell;
+  padding: 1em;
+  position: relative;
+  width: 3vw;
+}
+
+.BoardSquare:hover, .BoardSquare:focus {
+  background-color:lightslategrey !important;
+}
+
+.BoardSquare::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+/* This could be done a better way */
+.BoardSquare--checked {
+  background-color: lightgoldenrodyellow !important;
+}
+
+.BoardSquare--invalid:hover, .BoardSquare--invalid:focus {
+  background-color: lightcoral !important;
+  opacity: 0.5;
+}
+
+.BoardSquare--valid:hover, .BoardSquare--invalid:focus {
+  background-color: lightgreen !important;
+  opacity: 0.5;
+}
+
+.BoardSquare__input {
+  opacity: 0.01;
+  position: absolute;
+}

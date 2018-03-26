@@ -1,0 +1,24 @@
+.ChessBoard {
+  display: table;
+  margin: 0 auto;
+}
+
+.ChessBoard__row {
+  display: table-row;
+}
+
+.ChessBoard__row:nth-of-type(odd) > .BoardSquare:nth-of-type(odd) {
+  background-color: lightgrey;
+}
+
+.ChessBoard__row:nth-of-type(odd) > .BoardSquare:nth-of-type(even) {
+  background-color: darkgrey;
+}
+
+.ChessBoard__row:nth-of-type(even) > .BoardSquare:nth-of-type(even) {
+  background-color: lightgrey;
+}
+
+.ChessBoard__row:nth-of-type(even) > .BoardSquare:nth-of-type(odd) {
+  background-color: darkgrey;
+}
