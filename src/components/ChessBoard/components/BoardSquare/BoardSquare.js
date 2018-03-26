@@ -25,7 +25,7 @@ export default function BoardSquare({ boardCoordinates, checked, disabled, inval
         disabled={disabled}
         name="board-squares"
         onChange={onChange.bind(this, piece, boardCoordinates)}
-        onClick={onClick.bind(this, piece, boardCoordinates)}
+        onClick={onClick.bind(this, piece)}
         type="radio"
       />
       {piece.length > 0 &&

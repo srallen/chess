@@ -41,8 +41,9 @@ class ChessBoardContainer extends Component {
   validateKnightMove(selectedPieceCoordinates, boardCoordinates) {
     const xCoordinateDiff = Math.abs(selectedPieceCoordinates[0] - boardCoordinates[0]);
     const yCoordinateDiff = Math.abs(selectedPieceCoordinates[1] - boardCoordinates[1]);
-    
-    return [xCoordinateDiff, yCoordinateDiff].includes(1) && [xCoordinateDiff, yCoordinateDiff].includes(2);
+    const resultCoordinates = [xCoordinateDiff, yCoordinateDiff];
+
+    return resultCoordinates.includes(1) && resultCoordinates.includes(2);
   }
 
   validateBishopMove(selectedPieceCoordinates, boardCoordinates) {
@@ -70,7 +71,7 @@ class ChessBoardContainer extends Component {
   }
 
 
-  onClick(piece, boardCoordinates, event) {
+  onClick(piece, event) {
     if (isEqual(piece, this.state.selectedPiece)) {
       this.clearSelectedPiece();
     }
@@ -89,9 +90,7 @@ class ChessBoardContainer extends Component {
     }
 
     if (this.state.selectedPiece === null) {
-      this.setState((prevState) => {
-        return { selectedPiece: piece }
-      });
+      this.setState({ selectedPiece: piece });
     }
   }
 

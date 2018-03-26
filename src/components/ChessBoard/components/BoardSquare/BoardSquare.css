@@ -19,7 +19,7 @@
 
 /* This could be done a better way */
 .BoardSquare--checked {
-  background-color: lightgoldenrodyellow !important;
+  background-color: goldenrod!important;
 }
 
 .BoardSquare--invalid:hover, .BoardSquare--invalid:focus {
@@ -30,6 +30,7 @@
   background-color: lightgreen !important;
 }
 
+/* Do not remove input from DOM. Leave in, but hide in an accessible way to keep it available for screen readers */
 .BoardSquare__input {
   opacity: 0.01;
   position: absolute;
