@@ -12,15 +12,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 To run this app locally:
 
 1. Pull down the repository
-2. Run `yarn install`
-3. Run `yarn start`
+2. Run `yarn install` or `npm install`
+3. Run `yarn start` or `npm start`
 4. Open `localhost:3000` in a browser
 
 ## Tests
 
 This app is tested with jest, enzyme, and sinon.
 
-Run tests by using `yarn test`
+Run tests by using `yarn test` or `npm test`
 
 
 
