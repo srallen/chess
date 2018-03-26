@@ -24,12 +24,10 @@
 
 .BoardSquare--invalid:hover, .BoardSquare--invalid:focus {
   background-color: lightcoral !important;
-  opacity: 0.5;
 }
 
 .BoardSquare--valid:hover, .BoardSquare--invalid:focus {
   background-color: lightgreen !important;
-  opacity: 0.5;
 }
 
 .BoardSquare__input {

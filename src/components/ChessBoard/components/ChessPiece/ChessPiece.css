@@ -1,6 +1,6 @@
 .ChessPiece {
   cursor: pointer;
-  font-size: 3em;
+  font-size: 3vw;
   position: absolute;
   text-transform: uppercase;
 }
